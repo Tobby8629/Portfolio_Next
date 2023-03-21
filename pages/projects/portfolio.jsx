@@ -8,7 +8,7 @@ const Portfolio = () => {
   return (
     <>
       <ProNav />
-      <main className={styles.main}>
+      <div className={styles.main}>
         {portfolio.map((ut) => (
           <div className={styles.each} key={ut.id}>
             <Link href={ut.project} className={styles.each}>
@@ -22,7 +22,7 @@ const Portfolio = () => {
           </div>
 
         ))}
-      </main>
+      </div>
     </>
   );
 };
