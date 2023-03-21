@@ -41,8 +41,6 @@
 .each .text {
   position: absolute;
   bottom: 0;
-  right: 0;
-  left: 0;
   width: 100%;
   padding: 0.5rem 0;
   background-color: rgba(121, 121, 121, 0.342);
