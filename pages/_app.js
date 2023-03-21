@@ -1,14 +1,14 @@
 import Head from 'next/head';
-import { propTypes } from 'prop-types';
+import Script from 'next/script';
 import Layout from '../components/layout';
 import '@/styles/globals.css';
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        <script src="https://kit.fontawesome.com/196c781b0b.js" crossOrigin="anonymous" />
-      </Head>
+      <div className='container'>
+        <Script src="https://kit.fontawesome.com/196c781b0b.js" crossOrigin="anonymous" />
+      </div>
       <Layout>
         <Component {...pageProps} />
       </Layout>
@@ -16,7 +16,4 @@ export default function App({ Component, pageProps }) {
 
   );
 }
-App.propTypes = {
-  Component: propTypes.string.isRequired,
-  pageProps: propTypes.string.isRequired,
-};
+
