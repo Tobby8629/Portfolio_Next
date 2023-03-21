@@ -1,0 +1,49 @@
+.navbar {
+  display: flex;
+  padding: 1rem;
+  position: unset;
+}
+
+.navbar a {
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 13px;
+  color: black;
+  transition: 0.3s linear;
+}
+
+.each a {
+  color: rgba(241, 92, 92, 0.852);
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid rgb(248, 66, 66);
+}
+
+.main {
+  padding: 1rem 0.5rem;
+}
+
+.each {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+.img {
+  width: 100%;
+}
+
+.img img {
+  width: 100%;
+}
+
+.each .text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0.5rem;
+  background-color: rgba(121, 121, 121, 0.342);
+  backdrop-filter: blur(30px);
+}

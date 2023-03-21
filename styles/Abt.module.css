@@ -1,0 +1,56 @@
+.mobile {
+  padding: 0 1rem;
+}
+
+.text p {
+  margin-bottom: 10px;
+}
+
+.text ul {
+  margin: 10px 0;
+}
+
+.text li {
+  list-style: none;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.text a {
+  text-decoration: none;
+}
+
+.text a span {
+  color: gray;
+  text-decoration: none;
+}
+
+.text i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: rgb(249, 94, 94);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+}
+
+.link a {
+  width: fit-content;
+  padding: 5px;
+  font-size: 17px;
+  color: gray;
+  text-decoration: none;
+  border: 1px solid gray;
+}
+
+.link a:last-child {
+  margin-left: 10px;
+}
+
+.link a:hover {
+  border-color: rgb(249, 94, 94);
+  background-color: rgb(249, 94, 94);
+  color: white;
+}
