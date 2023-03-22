@@ -11,7 +11,7 @@ const Metric = () => {
       <div className={styles.main}>
         {metric.map((ut) => (
           <div className={styles.each} key={ut.id}>
-            <Link href={ut.project} className={styles.each}>
+            <Link href={ut.project}>
               <div className={styles.img}>
                 <img src={ut.image} alt="project view" />
               </div>
