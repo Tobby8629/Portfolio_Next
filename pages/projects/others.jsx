@@ -8,7 +8,7 @@ const Utility = () => {
   return (
     <>
       <ProNav />
-      <main className={styles.main}>
+      <div className={styles.main}>
         {others.map((ut) => (
           <div className={styles.each} key={ut.id}>
             <Link href={ut.project} className={styles.each}>
@@ -22,7 +22,7 @@ const Utility = () => {
           </div>
 
         ))}
-      </main>
+      </div>
     </>
   );
 };

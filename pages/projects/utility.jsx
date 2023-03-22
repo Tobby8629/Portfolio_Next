@@ -8,18 +8,21 @@ const Utility = () => {
   return (
     <>
       <ProNav />
-      <main className={styles.main}>
+      <div className={styles.main}>
         {utility.map((ut) => (
-          <Link href={ut.project} className={styles.each} key={ut.id}>
-            <div className={styles.img}>
-              <img src={ut.image} alt="project view" />
-            </div>
-            <div className={styles.text}>
-              <h3>{ut.title}</h3>
-            </div>
-          </Link>
+          <div className={styles.each} key={ut.id}>
+            <Link href={ut.project} >
+              <div className={styles.img}>
+                <img src={ut.image} alt="project view" />
+              </div>
+              <div className={styles.text}>
+                <h3>{ut.title}</h3>
+              </div>
+            </Link>
+          </div>
+          
         ))}
-      </main>
+      </div>
     </>
 
   );
