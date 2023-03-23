@@ -57,13 +57,13 @@ nav ul li :hover {
 }
 
 .icon {
-  z-index: 99;
+  z-index: 999;
   padding: 1rem;
 }
 
 .icon i {
   font-size: 33px;
-  color: rgb(75, 75, 75);
+  color: rgb(249, 94, 94);
 }
 
 .duty {
@@ -139,6 +139,7 @@ nav ul li :hover {
 .head {
   margin-bottom: 2rem;
   position: relative;
+  z-index: -99;
 }
 
 .head::after {

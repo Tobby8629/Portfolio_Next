@@ -27,7 +27,7 @@ const Skills = () => {
             <ul>
               {skill.map((skill)=>(
                 <li key={skill.id}>
-                <p>{skill.title}: </p>
+                <p>{skill.title}: {skill.rate}% </p>
                 <span className={styles.rate} style={{"--width": `${skill.rate}%`}}> </span>
               </li>
               ))}
