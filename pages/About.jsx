@@ -11,7 +11,8 @@ const About = () => (
     >
       <h2>About</h2>
     </header>
-    <main className="main">
+    <main className="abt">
+      <h2 className='head'>About tobby</h2>
       <Abt />
     </main>
 
