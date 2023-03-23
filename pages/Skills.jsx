@@ -1,5 +1,4 @@
 import styles from '@/styles/skills.module.css'
-import { Html } from 'next/document';
 
 const Skills = () => {
   const skill = [

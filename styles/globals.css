@@ -14,7 +14,7 @@ nav {
   display: flex;
 }
 
-nav ul{
+nav ul {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@ nav ul{
   height: 100vh;
   background-color: rgba(119, 118, 118, 0.208);
   backdrop-filter: blur(7px);
-  transition: .5s linear;
+  transition: 0.5s linear;
   outline: none;
 }
 
@@ -33,7 +33,7 @@ nav ul{
 }
 
 .links {
-  left: 0
+  left: 0;
 }
 
 nav ul li {
@@ -47,11 +47,10 @@ nav ul li {
   transition: 0.3s linear;
 }
 
-nav ul li a{
- color: white;
- text-decoration: none;
+nav ul li a {
+  color: white;
+  text-decoration: none;
 }
-
 
 nav ul li :hover {
   border-bottom: 3px solid red;
@@ -153,16 +152,11 @@ nav ul li :hover {
   border-radius: 10px;
 }
 
-.abt h2{
+.abt h2 {
   margin: 1rem;
 }
 
 @media (min-width: 760px) {
-
-  nav {
-    padding: 0.3rem 0.1rem;  
-  }
-
   .icon {
     display: none;
   }

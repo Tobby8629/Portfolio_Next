@@ -11,7 +11,7 @@ export default function Home() {
         <h3>
           {' '}
           <span className="hello">Hello! </span>
-          My name is Oluwatobby, and I'm a <br/>
+          My name is Oluwatobby, and I&apos;m a <br/>
           {' '}
           <span className="duty" />
         </h3>
