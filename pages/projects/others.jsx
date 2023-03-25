@@ -1,4 +1,4 @@
-import project from '../../public/projects';
+import project from '../api/projects';
 import ProNav from './pronav';
 import Detail from './proDetail';
 
