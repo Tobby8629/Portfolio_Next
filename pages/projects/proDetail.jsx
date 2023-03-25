@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import styles from '@/styles/project.module.css';
-import propTypes from "prop-types";
 
 const Detail = ({ project }) => (
   <div className={styles.main}>
@@ -42,9 +41,5 @@ const Detail = ({ project }) => (
     ))}
   </div>
 );
-
-Detail.propTypes = {
- project: propTypes.array.isRequired 
-}
 
 export default Detail;
