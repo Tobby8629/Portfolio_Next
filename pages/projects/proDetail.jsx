@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import project from '../../public/projects';
 import styles from '@/styles/project.module.css';
+import propTypes from "prop-types";
 
-const Detail = () => (
+const Detail = ({ project }) => (
   <div className={styles.main}>
     {project.map((pro) => (
       <div className={styles.each} key={pro.id}>
@@ -32,15 +32,19 @@ const Detail = () => (
 
             <div className={styles.btns}>
              <Link href={pro.project}>See live</Link>
-             <Link href={pro.source}> see demo</Link>
+             <Link href={pro.source}> see source</Link>
             </div>
 
           </div>
-          
+
       </div>
 
     ))}
   </div>
 );
+
+Detail.propTypes = {
+ project: propTypes.array.isRequired 
+}
 
 export default Detail;
