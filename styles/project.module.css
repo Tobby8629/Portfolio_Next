@@ -4,6 +4,15 @@
   position: unset;
 }
 
+.btns a {
+  margin-right: 10px;
+  border-radius: 10px;
+  color: rgb(30, 30, 30);
+  padding: 0 8px;
+  text-decoration: none;
+  border: 1px solid rgba(241, 92, 92, 0.852);
+}
+
 .navbar a {
   font-size: 18px;
   text-decoration: none;
@@ -26,27 +35,67 @@
 
 .each {
   position: relative;
-  width: 100%;
   margin-bottom: 1.2rem;
+  overflow: hidden;
+  padding: 0.5rem;
+  background-color: rgba(121, 121, 121, 0.342);
 }
 
 .img {
   width: 100%;
+  height: 170px;
 }
 
 .img img {
   width: 100%;
 }
 
-.each .text {
+.shadow {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 0.5rem 0;
   background-color: rgba(121, 121, 121, 0.342);
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(5px);
+  height: 100%;
+  top: 0;
+  transform: translateY(300px);
+  transition: 0.5s linear;
+  padding: 0.5rem;
 }
 
-.text h3 {
-  padding: 0 10px;
+.shadow h3 {
+  font-size: 16px;
+}
+
+.shadow h4 {
+  font-size: 15px;
+}
+
+.shadow p {
+  font-size: 14px;
+}
+
+.stacks {
+  display: flex;
+  margin: 8px 0;
+}
+
+.stacks li {
+  list-style: none;
+  margin-right: 10px;
+  font-size: 12px;
+  background-color: rgba(241, 92, 92, 0.852);
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+
+.btns {
+  margin: 8px 0;
+}
+
+.btns a:hover {
+  background-color: rgba(241, 92, 92, 0.852);
+  color: wheat;
+}
+
+.each:hover .shadow {
+  transform: translateY(0);
 }
