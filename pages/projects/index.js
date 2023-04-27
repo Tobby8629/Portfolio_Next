@@ -1,8 +1,7 @@
-import project from '@/pages/api/projects';
 import Detail from './proDetail';
 import ProNav from './pronav';
 
-const Projects = () => {
+const Projects = ({project}) => {
   
 return (
   <>

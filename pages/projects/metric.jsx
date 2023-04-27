@@ -1,8 +1,7 @@
-import project from '../api/projects';
 import Detail from './proDetail';
 import ProNav from './pronav';
 
-const Metric = () => {
+const Metric = ({project}) => {
   const metric = project.filter((pro) => pro.group === 'metric');
   return (
     <>

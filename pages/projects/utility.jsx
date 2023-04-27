@@ -1,8 +1,7 @@
-import project from '../api/projects';
 import ProNav from './pronav';
 import Detail from './proDetail';
 
-const Utility = () => {
+const Utility = ({project}) => {
   const utility = project.filter((pro) => pro.group === 'utility');
   return (
     <>

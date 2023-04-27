@@ -2,8 +2,6 @@ import Head from 'next/head';
 import Abt from './Abt';
 
 export default function Home() {
-  const project = process.env.NEXT_PUBLIC_DB_ARRAY
-  console.log(project)
   return (
     <>
       <Head>

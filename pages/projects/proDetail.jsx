@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from 'next/link'; 
 import styles from '@/styles/project.module.css';
 import propTypes from "prop-types";
 

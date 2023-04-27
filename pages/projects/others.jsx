@@ -1,8 +1,7 @@
-import project from '../api/projects';
 import ProNav from './pronav';
 import Detail from './proDetail';
 
-const Utility = () => {
+const Other = ({project}) => {
   const others = project.filter((pro) => pro.group === 'others');
   return (
     <>
@@ -12,4 +11,4 @@ const Utility = () => {
   );
 };
 
-export default Utility;
+export default Other;
