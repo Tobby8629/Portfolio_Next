@@ -8,9 +8,9 @@ const Abt = () => (
         my name is tobby, i am full-stack developer and i prolificient with
         Ruby On Rails as a full-stack framework,
         i am also vast with Javascript, Ruby, TypeScript,
-        React.JS, Next.JS. I current live in lagos Nigeria and
+        React.JS, Next.JS. I current live in lagos, Nigeria and
         i love to work remotely.
-        You can always connect with me via on socials
+        You can always connect with me via my socials
         {' '}
       </p>
       <ul>

@@ -16,7 +16,7 @@ const Skills = () => {
     return ( 
         <>
           <header
-      className="header"
+      className={styles.header}
       style={{
         backgroundImage:
        'linear-gradient(rgba(63, 63, 63, 0.295),rgba(63, 63, 63, 0.295)),url(/skill.jpg)',

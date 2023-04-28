@@ -4,7 +4,7 @@ import styles from '@/styles/project.module.css';
 const ProNav = () => (
 
   <div>
-    <header className="header" style={{ backgroundImage: 'linear-gradient(rgba(63, 63, 63, 0.795),rgba(63, 63, 63, 0.7495)),url(/project.jpg)' }}>
+    <header className={styles.header} style={{ backgroundImage: 'linear-gradient(rgba(63, 63, 63, 0.795),rgba(63, 63, 63, 0.7495)),url(/project.jpg)' }}>
       <h2>Projects</h2>
     </header>
     <nav className={styles.navbar}>

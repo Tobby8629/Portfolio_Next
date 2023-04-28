@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;900&display=swap');
 
+:root {
+  --bg: var(background-image: linear-gradient(#43434372, #43434372),url(/home.jpg))
+}
+
+
 * {
   padding: 0;
   margin: 0;
@@ -109,6 +114,7 @@ nav ul li :hover {
   flex-direction: column;
   justify-content: flex-end;
   font-family: 'Nunito Sans', sans-serif;
+  background-image: linear-gradient(#43434372, #43434372),url(/home.jpg)
 }
 
 .header h3 {
@@ -126,6 +132,10 @@ nav ul li :hover {
 
 .hello {
   color: rgb(249, 94, 94);
+}
+
+.desk {
+  display: none;
 }
 
 .main {
@@ -153,12 +163,60 @@ nav ul li :hover {
   background-color: rgb(132, 132, 132);
   border-radius: 10px;
 }
-
 .abt h2 {
   margin: 1rem;
 }
 
 @media (min-width: 760px) {
+  .header {
+    height: 100vh;
+    padding-bottom: 0;
+    justify-content: flex-end;
+    background-image: linear-gradient(#03020297, #000000ab),url(/home.jpg);
+  }
+
+  .header h3 {
+    font-size: 45px;
+  }
+
+  .header .duty {
+    font-size: 52px;
+  }
+
+ .desk .Abt_mobile__AgnFx {
+    padding: 0;
+    margin: 0;
+  }
+
+  .desk .Abt_text__a692f p {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+
+  .desk .Abt_text__a692f ul {
+    display: flex;
+  }
+
+  .desk .Abt_text__a692f li {
+    margin-right: 15px;
+    font-size: 23px;
+  }
+
+ .desk .Abt_text__a692f a span {
+    color: antiquewhite;
+ }
+
+ .desk .Abt_link__S_z_4 {
+  padding: .5rem 0;
+ }
+
+  .desk .Abt_link__S_z_4 a {
+    color: antiquewhite;
+    border-color: antiquewhite;
+    padding: 10px;
+    font-size: 23px;
+  }
+  
   .icon {
     display: none;
   }
@@ -168,12 +226,44 @@ nav ul li :hover {
     flex-direction: row;
     height: unset;
     justify-content: flex-end;
-    padding: 0.3rem 1rem;
+    align-items: center;
+    padding: 1rem;
     position: unset;
     background-color: transparent;
   }
 
   nav ul li {
-    margin-right: 13px;
+    margin-right: 15px;
+    margin-bottom: 0;
   }
+
+  .mobile {
+    display: none;
+  }
+
+  .desk {
+    display: block;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .abt {
+    display: none;
+  }
+
+  .head {
+    z-index: 0;
+    width: 350px;
+  }
+  
+  .header h2 {
+    color: whitesmoke;
+  }
+
+  .head::after {
+    background-color: rgb(249, 94, 94);
+  }
+
 }

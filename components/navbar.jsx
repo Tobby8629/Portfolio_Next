@@ -8,7 +8,7 @@ const Navbar = () => {
     const dav = document.getElementById("nav")
     const run = window.addEventListener("scroll", ()=>{
       if (scrollY>10) {
-        dav.style.backgroundColor = "white"
+        dav.style.backgroundColor = "rgba(245, 245, 245, 0.467)1"
       }
       else {
         dav.style.backgroundColor = "transparent"

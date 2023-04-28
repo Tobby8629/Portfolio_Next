@@ -1,3 +1,18 @@
+.header {
+  height: 35vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: 'Nunito Sans', sans-serif;
+  background-image: linear-gradient(#43434372, #43434372),url(/home.jpg);
+}
+
 .navbar {
   display: flex;
   padding: 1rem;
@@ -55,6 +70,7 @@
   background-color: rgba(121, 121, 121, 0.342);
   backdrop-filter: blur(5px);
   height: 100%;
+  width: 100%;
   top: 0;
   transform: translateY(300px);
   transition: 0.5s linear;
@@ -99,3 +115,14 @@
 .each:hover .shadow {
   transform: translateY(0);
 }
+
+@media (min-width:768px) {
+  .header {
+    height: 50vh;
+  }
+  .header h2 {
+    font-size: 25px;
+  }
+}
+
+
