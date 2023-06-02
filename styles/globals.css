@@ -266,4 +266,8 @@ nav ul li :hover {
     background-color: rgb(249, 94, 94);
   }
 
+  .about {
+    background-image: linear-gradient(#00000097, #000000ab),url(/about.jpg);
+  }
+
 }

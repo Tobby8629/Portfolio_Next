@@ -59,6 +59,17 @@
       "source": "https://github.com/Mekuseo/Space-Travellers-Hub.git",
       "desc": "Space Traveller Hub App is a rocket website with features of making reservations, cancel reservation and a profile page that updates the state of reservation of each rocket.",
       "stacks": ["React", "CSS", "Redux", "Render"]
+    },
+    {
+      "id": 7,
+      "project": "https://exchange-budget.onrender.com",
+      "image": "/budgetApp.png",
+      "group": "others",
+      "title": "Exchange BudgetApp",
+      "source": "https://github.com/Tobby8629/Budget_app",
+      "desc": "The budget app is mobile web app designed to help users manage their finances effectively. It provides features such as user authentication, category creation for budgeting purposes, and the ability to add transactions to track expenses and income.",
+      "stacks": ["Ruby on rails", "CSS",  "Render"]
     }
+
   ]
 }

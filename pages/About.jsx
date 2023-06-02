@@ -3,11 +3,7 @@ import Abt from './Abt';
 const About = () => (
   <>
     <header
-      className="header"
-      style={{
-        backgroundImage:
-       'linear-gradient(rgba(63, 63, 63, 0.295),rgba(63, 63, 63, 0.295)),url(/about.jpg)',
-      }}
+      className="header about"
     >
       <h2 className='mobile'>About</h2>
       <div className='desk'>
