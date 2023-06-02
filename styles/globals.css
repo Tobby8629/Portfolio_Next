@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;900&display=swap');
 
-:root {
-  --bg: var(background-image: linear-gradient(#43434372, #43434372),url(/home.jpg))
-}
-
-
 * {
   padding: 0;
   margin: 0;
@@ -114,7 +109,7 @@ nav ul li :hover {
   flex-direction: column;
   justify-content: flex-end;
   font-family: 'Nunito Sans', sans-serif;
-  background-image: linear-gradient(#43434372, #43434372),url(/home.jpg)
+  background-image: linear-gradient(#43434372, #43434372), url(/home.jpg);
 }
 
 .header h3 {
@@ -163,6 +158,7 @@ nav ul li :hover {
   background-color: rgb(132, 132, 132);
   border-radius: 10px;
 }
+
 .abt h2 {
   margin: 1rem;
 }
@@ -172,7 +168,7 @@ nav ul li :hover {
     height: 100vh;
     padding-bottom: 0;
     justify-content: flex-end;
-    background-image: linear-gradient(#03020297, #000000ab),url(/home.jpg);
+    background-image: linear-gradient(#03020297, #000000ab), url(/home.jpg);
   }
 
   .header h3 {
@@ -183,7 +179,7 @@ nav ul li :hover {
     font-size: 52px;
   }
 
- .desk .Abt_mobile__AgnFx {
+  .desk .Abt_mobile__AgnFx {
     padding: 0;
     margin: 0;
   }
@@ -191,34 +187,6 @@ nav ul li :hover {
   .desk .Abt_text__a692f p {
     font-size: 28px;
     margin: 10px 0;
-  }
-
-  .desk .Abt_text__a692f ul {
-    display: flex;
-  }
-
-  .desk .Abt_text__a692f li {
-    margin-right: 15px;
-    font-size: 23px;
-  }
-
- .desk .Abt_text__a692f a span {
-    color: antiquewhite;
- }
-
- .desk .Abt_link__S_z_4 {
-  padding: .5rem 0;
- }
-
-  .desk .Abt_link__S_z_4 a {
-    color: antiquewhite;
-    border-color: antiquewhite;
-    padding: 10px;
-    font-size: 23px;
-  }
-  
-  .icon {
-    display: none;
   }
 
   nav ul {
@@ -235,6 +203,34 @@ nav ul li :hover {
   nav ul li {
     margin-right: 15px;
     margin-bottom: 0;
+  }
+
+  .desk .Abt_text__a692f ul {
+    display: flex;
+  }
+
+  .desk .Abt_text__a692f li {
+    margin-right: 15px;
+    font-size: 23px;
+  }
+
+  .desk .Abt_text__a692f a span {
+    color: antiquewhite;
+  }
+
+  .desk .Abt_link__S_z_4 {
+    padding: 0.5rem 0;
+  }
+
+  .desk .Abt_link__S_z_4 a {
+    color: antiquewhite;
+    border-color: antiquewhite;
+    padding: 10px;
+    font-size: 23px;
+  }
+
+  .icon {
+    display: none;
   }
 
   .mobile {
@@ -257,7 +253,7 @@ nav ul li :hover {
     z-index: 0;
     width: 350px;
   }
-  
+
   .header h2 {
     color: whitesmoke;
   }
@@ -267,7 +263,6 @@ nav ul li :hover {
   }
 
   .about {
-    background-image: linear-gradient(#00000097, #000000ab),url(/about.jpg);
+    background-image: linear-gradient(#00000097, #000000ab), url(/about.jpg);
   }
-
 }
