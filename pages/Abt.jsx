@@ -48,7 +48,7 @@ const Abt = () => {
     {
       id: 8,
       name: "vercel",
-      image: '/vercel.png'
+      image: '/Vercel.png'
     },
     
   ]
