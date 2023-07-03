@@ -1,56 +1,152 @@
-.mobile {
-  padding: 0 1rem;
+/***************** ABT CSS ************************/
+
+.tools h2 {
+  margin: 1rem 0;
 }
 
-.text p {
-  margin-bottom: 10px;
+.skills {
+  border: 1px solid rgb(249, 94, 94);
+  border-radius: 10px;
+  padding: 3px;
+  display: inline-block;
+  margin: 3px;
+  font-size: 11px;
 }
 
-.text ul {
-  margin: 10px 0;
-}
-
-.text li {
-  list-style: none;
-  font-size: 18px;
-  margin: 5px 0;
-}
-
-.text a {
-  text-decoration: none;
-}
-
-.text a span {
-  color: gray;
-  text-decoration: none;
-}
-
-.text i {
-  margin-right: 10px;
-  font-size: 18px;
-  color: rgb(249, 94, 94);
-}
-
-.link {
+.alltool {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  align-self: center;
 }
 
-.link a {
-  width: fit-content;
-  padding: 5px;
-  font-size: 17px;
-  color: gray;
-  text-decoration: none;
-  border: 1px solid gray;
+.alltool div {
+  width: 23%;
+  margin-right: 5px;
 }
 
-.link a:last-child {
-  margin-left: 10px;
+.alltool img {
+  width: 100%;
 }
 
-.link a:hover {
-  border-color: rgb(249, 94, 94);
-  background-color: rgb(249, 94, 94);
-  color: white;
+.st,
+.ski {
+  margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .mobil {
+    padding: 3rem 0;
+  }
+
+  .experience::before {
+    transform: translateY(20px);
+    height: 98%;
+  }
+
+  .experience {
+    border-right: 4px solid rgb(249, 94, 94);
+  }
+
+  .experience ul li {
+    font-size: 17px;
+  }
+
+  .tools h2 {
+    margin: 2rem 0;
+  }
+
+  .skills {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .alltool {
+    background: #f8f8ff61;
+    padding: 1rem 0;
+  }
+
+  .alltool div {
+    width: 15%;
+  }
+
+  .texts {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobil .imag {
+    width: 25%;
+  }
+
+  .mobil .imag img {
+    width: 100%;
+  }
+
+  .texts p {
+    line-height: 30px;
+    width: 70%;
+    margin-left: 20px;
+    font-size: 15px;
+  }
+
+  .st {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .ski {
+    width: 48%;
+  }
+
+  .tools {
+    width: 48%;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mobil .imag {
+    width: 24%;
+  }
+
+  .texts p {
+    line-height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .experience {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .experience ul {
+    padding: 0.5rem 1rem;
+    width: 46%;
+    position: relative;
+  }
+
+  .experience ul li {
+    font-size: 20px;
+  }
+
+  .skills {
+    font-size: 18px;
+  }
+
+  .texts p {
+    line-height: 50px;
+    font-size: 25px;
+  }
+
+  .alltool div {
+    width: 13%;
+  }
+
+  .imag {
+    width: 20%;
+  }
 }

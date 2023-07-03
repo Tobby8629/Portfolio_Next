@@ -6,12 +6,12 @@ const Navbar = () => {
 
   useEffect(()=>{
     const dav = document.getElementById("nav")
-    const run = window.addEventListener("scroll", ()=>{
-      if (scrollY>10) {
-        dav.style.backgroundColor = "rgba(245, 245, 245, 0.467)1"
+    window.addEventListener("scroll", ()=>{
+      if (scrollY > 10) {
+        dav.classList.add('blur')
       }
       else {
-        dav.style.backgroundColor = "transparent"
+        dav.classList.remove('blur')
       }
     })
   })
@@ -22,7 +22,6 @@ return(
     <ul className= {menu ? 'hide' : 'links'} onClick={()=>setmenu(true)}>
       <li><Link href="/">Home</Link></li> 
       <li><Link href="/About">About</Link></li>
-      <li><Link href="/Skills">Skills</Link></li>
      <li><Link href="/Contact">Contact</Link></li> 
     </ul>
     <div className='icon' onClick={()=>setmenu(!menu)}>

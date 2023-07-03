@@ -6,6 +6,18 @@
   font-family: 'Nunito Sans', sans-serif;
 }
 
+img {
+  width: 50%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -35,6 +47,7 @@ nav ul {
 
 .links {
   left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 nav ul li {
@@ -46,6 +59,11 @@ nav ul li {
   list-style: none;
   border-radius: 10px;
   transition: 0.3s linear;
+}
+
+.blur {
+  background-color: rgba(245, 245, 245, 0.467);
+  backdrop-filter: blur(15px);
 }
 
 nav ul li a {
@@ -67,58 +85,57 @@ nav ul li :hover {
   color: rgb(249, 94, 94);
 }
 
-.duty {
-  color: rgb(249, 94, 94);
-  font-size: 30px;
-  transition: 0.3s linear;
-}
-
-.duty::before {
-  content: "software developer";
-  animation: duty 15s infinite;
-}
-
-@keyframes duty {
-  25% {
-    content: "Full-stack developer";
-    color: wheat;
-  }
-
-  50% {
-    content: "Front-End developer";
-    color: coral;
-  }
-
-  75% {
-    content: "MPH";
-    color: darkorange;
-  }
-}
-
 /** header **/
 
 .header {
-  height: 35vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
   padding: 1rem;
+  justify-content: center;
   color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   font-family: 'Nunito Sans', sans-serif;
-  background-image: linear-gradient(#43434372, #43434372), url(/home.jpg);
+  background-image: linear-gradient(#010101c2, #121212cf), url(/home.jpg);
 }
 
 .header h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .header h2 {
   font-size: 35px;
   color: rgb(192, 190, 190);
+}
+
+.duty {
+  animation: duty 3s infinite;
+}
+
+.about {
+  height: 20vh;
+  justify-content: flex-end;
+}
+
+.abt {
+  padding: 1rem;
+}
+
+@keyframes duty {
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 1;
+  }
 }
 
 .header p {
@@ -127,15 +144,16 @@ nav ul li :hover {
 
 .hello {
   color: rgb(249, 94, 94);
+  opacity: 1;
 }
 
 .desk {
   display: none;
 }
 
-.main {
+/* .main {
   padding: 1rem 0;
-}
+} */
 
 .main h2 {
   padding: 0.5rem 1rem;
@@ -146,6 +164,7 @@ nav ul li :hover {
   margin-bottom: 2rem;
   position: relative;
   z-index: -99;
+  width: 200px;
 }
 
 .head::after {
@@ -159,34 +178,186 @@ nav ul li :hover {
   border-radius: 10px;
 }
 
-.abt h2 {
-  margin: 1rem;
+/***************** TOBBY INFO CSS ****************/
+
+.text p {
+  margin: 10px 0;
+}
+
+.text ul {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.text li {
+  list-style: none;
+  font-size: 20px;
+  margin: 5px 3px;
+}
+
+.text a {
+  text-decoration: none;
+}
+
+.text a span {
+  color: gray;
+  text-decoration: none;
+}
+
+.text i {
+  margin-right: 10px;
+  font-size: 25px;
+  color: rgb(249, 94, 94);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+}
+
+.link a {
+  width: fit-content;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  font-size: 17px;
+  color: #ddd;
+  text-decoration: none;
+  border: 1px solid gray;
+}
+
+.info li a {
+  font-size: 25px;
+  color: #f14343;
+}
+
+.link a:focus {
+  background-color: rgb(249, 94, 94);
+  border-color: rgb(249, 94, 94);
+  outline: none;
+  color: white;
+}
+
+.link a:first-child {
+  animation: left 2s 1;
+}
+
+@keyframes left {
+  from {
+    transform: translateX(-15px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.link a:last-child {
+  margin-left: 10px;
+  animation: right 2s 1;
+}
+
+@keyframes right {
+  from {
+    transform: translateX(15px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.link a:hover {
+  border-color: rgb(249, 94, 94);
+  background-color: rgb(249, 94, 94);
+  color: white;
+}
+
+.info p {
+  padding: 0.5rem 1rem;
+}
+
+.skii {
+  padding: 0.5rem 1rem;
+}
+
+.info ul {
+  display: flex;
+  margin: 0 1rem;
+}
+
+.info li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+.skil {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skil p {
+  width: 40%;
+  display: block;
+}
+
+.abt .ex {
+  margin: 1rem 0;
 }
 
 @media (min-width: 760px) {
   .header {
     height: 100vh;
     padding-bottom: 0;
-    justify-content: flex-end;
-    background-image: linear-gradient(#03020297, #000000ab), url(/home.jpg);
+  }
+
+  .wrapper {
+    width: 80%;
+    margin: auto;
+    text-align: center;
   }
 
   .header h3 {
     font-size: 45px;
   }
 
-  .header .duty {
-    font-size: 52px;
+  .header h2 {
+    font-size: 60px;
+    font-weight: 800;
+    color: whitesmoke;
+    margin: 15px 0;
+  }
+
+  .header p {
+    font-size: 30px;
+  }
+
+  .head {
+    z-index: 0;
+    width: 400px;
+  }
+
+  .about .head {
+    font-size: 50px;
+  }
+
+  .desk {
+    display: block;
+  }
+
+  .home {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .desk .teex {
+    width: 65%;
+    margin-left: 15px;
   }
 
   .desk .Abt_mobile__AgnFx {
     padding: 0;
     margin: 0;
-  }
-
-  .desk .Abt_text__a692f p {
-    font-size: 28px;
-    margin: 10px 0;
   }
 
   nav ul {
@@ -205,20 +376,51 @@ nav ul li :hover {
     margin-bottom: 0;
   }
 
-  .desk .Abt_text__a692f ul {
+  .text ul {
     display: flex;
+    justify-content: center;
   }
 
-  .desk .Abt_text__a692f li {
-    margin-right: 15px;
+  .text li {
     font-size: 23px;
+    margin-right: 8px;
   }
 
-  .desk .Abt_text__a692f a span {
+  .text a span {
     color: antiquewhite;
   }
 
-  .desk .Abt_link__S_z_4 {
+  .text p {
+    font-size: 28px;
+  }
+
+  /* .texts p {
+    line-height: 30px;
+    width: 70%;
+    margin-left: 20px;
+    font-size: 15px;
+   } */
+
+  .text i {
+    margin-right: 20px;
+    font-size: 33px;
+  }
+
+  .link {
+    justify-content: center;
+    margin: 1.2rem 0;
+  }
+
+  .link a {
+    padding: 10px 25px;
+    font-size: 25px;
+  }
+
+  .link a:last-child {
+    margin-left: 10px;
+  }
+
+  /* .desk .Abt_link__S_z_4 {
     padding: 0.5rem 0;
   }
 
@@ -227,7 +429,7 @@ nav ul li :hover {
     border-color: antiquewhite;
     padding: 10px;
     font-size: 23px;
-  }
+  } */
 
   .icon {
     display: none;
@@ -237,25 +439,12 @@ nav ul li :hover {
     display: none;
   }
 
-  .desk {
-    display: block;
-  }
-
-  .main {
+  /* .main {
     display: none;
-  }
+  } */
 
   .abt {
     display: none;
-  }
-
-  .head {
-    z-index: 0;
-    width: 350px;
-  }
-
-  .header h2 {
-    color: whitesmoke;
   }
 
   .head::after {
@@ -264,5 +453,59 @@ nav ul li :hover {
 
   .about {
     background-image: linear-gradient(#00000097, #000000ab), url(/about.jpg);
+    height: 100%;
+    padding-top: 5rem;
+  }
+
+  .header .ex {
+    margin: 2rem 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .wrapper {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    width: 70%;
+  }
+
+  .desk .imag {
+    width: 20%;
+  }
+
+  .text p {
+    font-size: 38px;
+  }
+
+  .text i {
+    font-size: 40px;
+  }
+
+  .link a {
+    font-size: 30px;
+  }
+
+  .header h2 {
+    font-size: 80px;
+  }
+
+  .Abt_text__a692f a {
+    font-size: 30px;
+  }
+
+  .desk .Abt_link__S_z_4 a {
+    font-size: 25px;
+  }
+
+  .Abt_text__a692f i {
+    font-size: 32px;
+  }
+
+  .Abt_text__a692f ul {
+    margin: 0;
   }
 }

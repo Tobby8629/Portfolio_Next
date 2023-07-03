@@ -22,10 +22,10 @@
 .btns a {
   margin-right: 10px;
   border-radius: 10px;
-  color: rgb(30, 30, 30);
   padding: 0 8px;
   text-decoration: none;
-  border: 1px solid rgba(241, 92, 92, 0.852);
+  color: black;
+  border: 1px solid black;
 }
 
 .navbar a {
@@ -53,7 +53,7 @@
   margin-bottom: 1.2rem;
   overflow: hidden;
   padding: 0.5rem;
-  background-color: rgba(121, 121, 121, 0.342);
+  background: rgb(242 59 59 / 66%);
 }
 
 .img {
@@ -63,18 +63,24 @@
 
 .img img {
   width: 100%;
+  height: 100%;
+}
+
+.each h3 {
+  line-height: 40px;
 }
 
 .shadow {
   position: absolute;
-  background-color: rgba(121, 121, 121, 0.342);
-  backdrop-filter: blur(5px);
+  background-color: rgba(177, 177, 177, 0.342);
+  backdrop-filter: blur(25px);
   height: 100%;
   width: 100%;
   top: 0;
   transform: translateY(300px);
   transition: 0.5s linear;
-  padding: 0.5rem;
+  padding: 0.3rem;
+  left: 0;
 }
 
 .shadow h3 {
@@ -86,7 +92,8 @@
 }
 
 .shadow p {
-  font-size: 14px;
+  padding-right: 10px;
+  font-size: 12px;
 }
 
 .stacks {
@@ -122,6 +129,58 @@
   }
 
   .header h2 {
+    font-size: 53px;
+  }
+
+  .navbar a {
+    font-size: 28px;
+    margin-right: 20px;
+  }
+
+  .main {
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .each {
+    width: 47%;
+    margin-right: 5px;
+  }
+
+  .img {
+    height: 250px;
+  }
+
+  .shadow h3 {
+    font-size: 22px;
+  }
+
+  .shadow p,
+  .shadow h4 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .each {
+    width: 31.6%;
+  }
+
+  .shadow h3 {
     font-size: 25px;
+  }
+
+  .shadow p,
+  .shadow h4 {
+    font-size: 18px;
+  }
+
+  .stacks li {
+    font-size: 16px;
+  }
+
+  .shadow a {
+    font-size: 16px;
   }
 }
