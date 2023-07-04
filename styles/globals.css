@@ -305,7 +305,7 @@ nav ul li :hover {
   margin: 1rem 0;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .header {
     height: 100vh;
     padding-bottom: 0;
@@ -343,6 +343,7 @@ nav ul li :hover {
 
   .desk {
     display: block;
+    padding: 0.8rem;
   }
 
   .home {
@@ -465,6 +466,10 @@ nav ul li :hover {
 @media (min-width: 1000px) {
   .wrapper {
     width: 65%;
+  }
+
+  .desk {
+    padding: 1.2rem;
   }
 }
 

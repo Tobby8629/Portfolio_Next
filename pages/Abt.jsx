@@ -1,57 +1,142 @@
 import Link from 'next/link';
 import styles from '@/styles/Abt.module.css';
 import MoreAbout from '@/components/tee';
+import Tools from '@/components/Tools';
 
 const Abt = () => {
   const skill = [
-    "punctunality", "adaptability",
-    "working with designs","problem-solving", "Github", "deployments",
-    "collaboration", "communication", "teamwork", "Jest", "MVC", "Remote pair-programming", "Database-design", "Gitflow",
+    "punctunality", "adaptability", "time management",
+    "working with designs","problem-solving","collaboration",
+     "communication", "teamwork", "Remote pair-programming", "Database-design", "Gitflow",
     "code review", "mentorship"]
 
   const tools = [
     {
       id: 1,
       name: "Html5",
-      image: '/html5.png'
+      image: '/html5.png',
+      class: "frontend"
+    },
+    {
+      id: 9,
+      name: "React js",
+      image: '/react.svg',
+      class: "frontend"
+    },
+    {
+      id: 10,
+      name: "redux",
+      image: '/redux.svg',
+      class: "frontend"
+    },
+    {
+      id: 11,
+      name: "tailwind",
+      image: '/tailwind.svg',
+      class: "frontend"
+    },
+    {
+      id: 12,
+      name: "next js",
+      image: '/next.svg',
+      class: "frontend"
+    },
+    {
+      id: 13,
+      name: "postgreSQL",
+      image: '/postgres.svg',
+      class: "backend"
+    },
+    {
+      id: 14,
+      name: "rspec",
+      image: '/rspec.svg',
+      class: "tool"
+    },
+    {
+      id: 15,
+      name: "jest",
+      image: '/jest.svg',
+      class: "tool"
+    },
+    {
+      id: 16,
+      name: "npm",
+      image: '/npm.svg',
+      class: "tool"
+    },
+    {
+      id: 17,
+      name: "sanityio",
+      image: '/sanity.svg',
+      class: "backend"
+    },
+    {
+      id: 18,
+      name: "ruby",
+      image: '/ruby.svg',
+      class: "backend"
+    },
+    {
+      id: 20,
+      name: "JWT",
+      image: '/jwt.svg',
+      class: "backend"
+    },
+    {
+      id: 19,
+      name: "cancan",
+      image: '/cancan.svg',
+      class: "backend"
     },
     {
       id: 2,
       name: "css",
-      image: '/css.png'
+      image: '/css.png',
+      class: "frontend"
     },
     {
       id: 3,
       name: "javascript",
-      image: '/javascript.png'
+      image: '/javascript.png',
+      class: "frontend"
     },
     {
       id: 4,
       name: "chromedev",
-      image: '/chromedev.png'
+      image: '/chromedev.png',
+      class: "tool",
     },
     {
       id: 5,
       name: "render",
-      image: '/render.png'
+      image: '/render.png',
+      class: "tool",
     },
     {
       id: 6,
       name: "github",
-      image: '/github.png'
+      image: '/github.png',
+      class: "tool",
     },
     {
       id: 7,
       name: "rails",
-     image: '/rails.svg'
+     image: '/rails.svg',
+     class: 'backend',
     },
     {
       id: 8,
       name: "vercel",
-      image: '/Vercel.png'
+      image: '/Vercel.png',
+      class: 'tool'
     },
     
   ]
+
+  const frontend = tools.filter((e)=> e.class === "frontend")
+  const backend = tools.filter((e)=> e.class === "backend")
+  const tool = tools.filter((e)=> e.class === "tool")
 
   return (
     <main className={styles.mobil}>
@@ -61,27 +146,24 @@ const Abt = () => {
       </div>
       <MoreAbout />
      </div>
-    <div className={styles.st}>
-      <div className={styles.ski}>
-      <h2 className='head'>Skills</h2>
-        <div className={styles.experience}>
-          {skill.map((e) => (
-              <span key={e} className={styles.skills}>{e}</span>
-            ))}
+     <>
+       <h2 className='head'>Skills and Tools</h2>
+       <div className={styles.st}>
+        <Tools title="Front-end" tools = {frontend}  />
+        <Tools title="Backend-end" tools = {backend}  />
+        <Tools title="Other tools" tools = {tool}  />
+        <div className={styles.ski}>
+          <>
+            <h4>soft skills: </h4>
+            <div className={styles.experience}>
+            {skill.map((e) => (
+                <span key={e} className={styles.skills}>{e}</span>
+              ))}
+          </div>
+          </>
         </div>
-      </div>
-      
-      <div className={styles.tools}>
-           <h2 className='head'>Tools</h2>
-           <div className={styles.alltool}>
-             {tools.map((e)=>(
-               <div key={e.id}>
-                 <img src={e.image} alt={e.name} />
-              </div>
-             ))}
-        </div>
-      </div>
     </div>
+     </>
   </main>
   )
   

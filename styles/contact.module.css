@@ -93,7 +93,18 @@
 
 @media (min-width: 1000px) {
   .contact {
-    padding: 1rem 10rem;
+    padding: 1rem 13rem;
+    padding-top: 4rem;
+  }
+
+  .contact form input {
+    padding: 15px 5px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact {
+    padding: 1rem 20rem;
     padding-top: 4rem;
   }
 
