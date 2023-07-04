@@ -224,6 +224,7 @@ nav ul li :hover {
   color: #ddd;
   text-decoration: none;
   border: 1px solid gray;
+  transition: .5s linear;
 }
 
 .info li a {
@@ -323,7 +324,7 @@ nav ul li :hover {
 
   .header h2 {
     font-size: 60px;
-    font-weight: 800;
+    font-weight: 700;
     color: whitesmoke;
     margin: 15px 0;
   }
