@@ -162,6 +162,7 @@
   .texts p {
     line-height: 40px;
     font-size: 20px;
+    margin-left: 40px;
   }
 
   .skills {
