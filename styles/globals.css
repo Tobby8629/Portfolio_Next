@@ -224,7 +224,7 @@ nav ul li :hover {
   color: #ddd;
   text-decoration: none;
   border: 1px solid gray;
-  transition: .5s linear;
+  transition: 0.5s linear;
 }
 
 .info li a {
