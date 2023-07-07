@@ -1,0 +1,68 @@
+.header {
+  height: 35vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: 'Nunito Sans', sans-serif;
+  background-image: linear-gradient(#43434372, #43434372), url(/home.jpg);
+}
+
+.skills {
+  padding: 1rem;
+  font-size: 20px;
+}
+
+.skills li {
+  list-style: none;
+  background-color: rgba(208, 208, 208, 0.166);
+  padding: 0.5rem;
+  margin: 10px 0;
+}
+
+.rate {
+  display: block;
+  width: 300px;
+  height: 7px;
+  border-radius: 10px;
+  background-color: rgba(214, 208, 208, 0.927);
+  margin: 10px;
+  position: relative;
+  z-index: -99;
+}
+
+.rate::after {
+  content: "";
+  background-color: rgb(255, 88, 88);
+  width: var(--width);
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 50vh;
+  }
+
+  .skills ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .skills ul li {
+    width: 30%;
+  }
+
+  .rate {
+    width: 95%;
+    height: 12px;
+  }
+}

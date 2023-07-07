@@ -1,5 +1,5 @@
+import TobbyInfo from '@/components/Info';
 import Head from 'next/head';
-import Abt from './Abt';
 
 export default function Home() {
   return (
@@ -7,26 +7,19 @@ export default function Home() {
       <Head>
         <title> Tobby || Home</title>
       </Head>
-      <header className="header" style={{ backgroundImage: 'linear-gradient(#43434372, #43434372),url(/home.jpg)' }}>
-        <h3>
+      <header className="header" style={{overflow: "hidden"}}>
+        <div className='wrapper'>
+          <h2>
           {' '}
           <span className="hello">Hello! </span>
-          My name is oluwatobby, and i am
-          {' '}
-          <span className="duty" />
-        </h3>
-        {/* <p>
-        Lorem Ipsum is simply dummy text of the printing and
-         typesetting industry.
-        Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type
-        and scrambled it to make a type specimen boo</p> */}
+         <span className='duty'>I&apos;m Tobby, <br/>Glad to Have You</span> 
+        </h2>
+        <div className='teex'>
+          <TobbyInfo />
+        </div>
+        </div>
+        
       </header>
-      <div className="main">
-        <h2>Want to Know about Tobby?</h2>
-        <Abt />
-      </div>
     </>
   );
 }

@@ -1,0 +1,137 @@
+.contact {
+  height: 100%;
+  background-image: linear-gradient(#010101c2, #121212cf), url(/contact.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+.contact h3 {
+  color: white;
+  font-size: 30px;
+  margin: 2rem 0;
+  z-index: 0;
+}
+
+.contact h4 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 23px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(237, 235, 235, 0.231);
+  backdrop-filter: blur(15px);
+  padding: 1rem;
+}
+
+.white {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.socials {
+  background-color: rgba(237, 235, 235, 0.231);
+  backdrop-filter: blur(15px);
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+}
+
+.socials li {
+  color: rgb(251, 121, 121);
+  font-weight: 700;
+}
+
+.socials a {
+  color: white;
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 5px;
+  margin: 0.5rem 0;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.contact form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.conditions {
+  display: none;
+  color: rgb(253, 135, 135);
+  padding: 1rem;
+  font-size: 14px;
+}
+
+.conditions li {
+  list-style: circle;
+}
+
+.contact form button {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  background-color: rgb(251, 121, 121);
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  transition: 0.3s linear;
+}
+
+.contact form button:hover {
+  padding: 0.5rem 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    padding: 1rem 5rem;
+    padding-top: 4rem;
+    height: 100%;
+  }
+
+  .contact h4 {
+    font-size: 30px;
+  }
+
+  .socials li,
+  .socials a {
+    font-size: 22px;
+  }
+
+  .contact form button {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .contact {
+    padding: 1rem 13rem;
+    padding-top: 4rem;
+  }
+
+  .contact form input {
+    padding: 15px 5px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact {
+    padding: 1rem 20rem;
+    padding-top: 4rem;
+  }
+
+  .contact form input {
+    padding: 15px 5px;
+  }
+}

@@ -1,12 +1,14 @@
 import Detail from './proDetail';
 import ProNav from './pronav';
 
-const Projects = () => (
+const Projects = ({project}) => {
+  
+return (
   <>
     <ProNav />
-    <Detail />
+    <Detail  project = {project}/>
   </>
 
-);
+)};
 
 export default Projects;

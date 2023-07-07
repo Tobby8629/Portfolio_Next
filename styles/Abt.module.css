@@ -1,56 +1,218 @@
-.mobile {
-  padding: 0 1rem;
+/***************** ABT CSS ************************/
+
+.tools h2 {
+  margin: 1rem 0;
 }
 
-.text p {
-  margin-bottom: 10px;
+.mobil h2 {
+  margin: 2rem 0;
 }
 
-.text ul {
-  margin: 10px 0;
+.mobil h4 {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
-.text li {
-  list-style: none;
-  font-size: 18px;
-  margin: 5px 0;
+.skills {
+  border: 1px solid rgb(249, 94, 94);
+  border-radius: 10px;
+  padding: 5px;
+  display: inline-block;
+  margin: 3px;
+  font-size: 15px;
 }
 
-.text a {
-  text-decoration: none;
+.tools {
+  margin: 1rem 0;
 }
 
-.text a span {
-  color: gray;
-  text-decoration: none;
-}
-
-.text i {
-  margin-right: 10px;
-  font-size: 18px;
-  color: rgb(249, 94, 94);
-}
-
-.link {
+.alltool {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  align-self: center;
+  padding: 0.7rem;
+  border: 1px solid rgba(249, 94, 94, 0.773);
+  border-radius: 5px;
 }
 
-.link a {
-  width: fit-content;
-  padding: 5px;
-  font-size: 17px;
-  color: gray;
-  text-decoration: none;
-  border: 1px solid gray;
+.alltool div {
+  width: 18%;
+  height: 50px;
+  margin: 5px 0;
+  margin-right: 10px;
+  background-color: rgb(194 194 194 / 5%);
+  box-shadow: 0 0 3px 0 grey;
+  padding: 1rem;
+  transition: 0.5s linear;
 }
 
-.link a:last-child {
-  margin-left: 10px;
+.alltool div:hover {
+  transform: scale(1.2);
 }
 
-.link a:hover {
-  border-color: rgb(249, 94, 94);
-  background-color: rgb(249, 94, 94);
-  color: white;
+.alltool img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.st,
+.ski {
+  margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .mobil {
+    padding: 2rem 0;
+  }
+
+  .tools {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .experience::before {
+    transform: translateY(20px);
+    height: 98%;
+  }
+
+  .experience ul li {
+    font-size: 17px;
+  }
+
+  .tools h2 {
+    margin: 2rem 0;
+  }
+
+  .skills {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .alltool {
+    background: #f8f8ff61;
+    padding: 1rem;
+  }
+
+  .alltool div {
+    width: 17%;
+    height: 90px;
+    margin-right: 15px;
+    background-color: rgb(192, 190, 190);
+  }
+
+  .texts {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobil .imag img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+  }
+
+  .texts p {
+    line-height: 25px;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+  .st {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .experience {
+    background: #f8f8ff61;
+    border: 1px solid rgba(249, 94, 94, 0.773);
+    border-radius: 5px;
+    padding: 1rem;
+  }
+
+  .ski {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .mobil h4 {
+    font-size: 30px;
+  }
+
+  /* .tools {
+    width: 48%;
+  } */
+}
+
+@media (min-width: 1000px) {
+  .mobil .imag {
+    width: 24%;
+  }
+
+  .alltool div {
+    width: 18%;
+    height: 100px;
+    margin-right: 17px;
+  }
+
+  .texts p {
+    line-height: 40px;
+    font-size: 20px;
+    margin-left: 40px;
+  }
+
+  .skills {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .tools,
+  .ski {
+    width: 45%;
+  }
+
+  .alltool div {
+    width: 13%;
+    height: 50px;
+  }
+
+  .experience {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .experience ul {
+    padding: 0.5rem 1rem;
+    width: 46%;
+    position: relative;
+  }
+
+  .experience ul li {
+    font-size: 20px;
+  }
+
+  .skills {
+    font-size: 22px;
+  }
+
+  .texts p {
+    line-height: 50px;
+    font-size: 25px;
+    margin-left: 20px;
+  }
+
+  .imag {
+    width: 20%;
+  }
+
+  .mobil .imag img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+  }
 }

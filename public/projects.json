@@ -1,0 +1,75 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "project": "https://metric-app-4bso.onrender.com/",
+      "image": "/metricApp1.png",
+      "group": "metric",
+      "title": "Metric App",
+      "source": "https://github.com/Tobby8629/react-capstone.git",
+      "desc": "React Metric WebApp is a webApp that contains Apple product annual revenue, displaying them in segment of year, and into a smaller segment of each country revenue.",
+      "stacks": ["React", "CSS", "Redux", "Render"]
+    },
+    {
+      "id": 2,
+      "project": "https://mob-scrub.vercel.app/",
+      "image": "/mob-scrub.png",
+      "group": "others",
+      "title": "Mob-Scrub",
+      "source": "https://github.com/Tobby8629/mob_scrub",
+      "desc": "The Mob-Scrub app simplifies scheduling laundry and house cleaning services. With user-friendly features like easy booking, secure payments, and real-time updates, it provides a seamless experience for customers.",
+      "stacks": ["React", "CSS", "Git", "Vercel"]
+    },
+    {
+      "id": 3,
+      "project": "https://tobby8629.github.io/Tobby-portfolio/",
+      "image": "/portfolio1.png",
+      "group": "portfolio",
+      "title": "Tobby Porfolio",
+      "source": "https://github.com/Tobby8629/Tobby-portfolio.git",
+      "desc": "A portfolio project, which houses all projects, resumes, and social links to reach tobby, the project has a project section, an about myself section, contact me.",
+      "stacks": ["Html", "CSS", "JavaScript"]
+    },
+    {
+      "id": 4,
+      "project": "https://tobby8629.github.io/Capstone-project/index.html",
+      "image": "/Nts.png",
+      "group": "others",
+      "title": "Nts Summit",
+      "source": "https://github.com/Tobby8629/Capstone-project.git",
+      "desc": "A National summit website, that describes all activities involved and expected from the summit.",
+      "stacks": ["Html", "CSS", "JavaScript"]
+    },
+    {
+      "id": 5,
+      "project": "https://tobby8629.github.io/Todo_list/dist/",
+      "image": "/todolist.png",
+      "group": "utility",
+      "title": "Todo List",
+      "source": "https://github.com/Tobby8629/Todo_list.git",
+      "desc": "Todo_list is a project built with webpack with alot features such as adding and removing from the todo-list, dragable event, clear completed tasks",
+      "stacks": ["Html", "CSS", "Webpack", "JavaScript"]
+    },
+    {
+      "id": 6,
+      "project": "https://space-x-vv8h.onrender.com/",
+      "image": "/spaceApp.png",
+      "group": "others",
+      "title": "Space X",
+      "source": "https://github.com/Mekuseo/Space-Travellers-Hub.git",
+      "desc": "Space Traveller Hub App is a rocket website with features of making reservations, cancel reservation and a profile page that updates the state of reservation of each rocket.",
+      "stacks": ["React", "CSS", "Redux", "Render"]
+    },
+    {
+      "id": 7,
+      "project": "https://exchange-budget.onrender.com/",
+      "image": "/budgetApp.png",
+      "group": "others",
+      "title": "Exchange BudgetApp",
+      "source": "https://github.com/Tobby8629/Budget_app",
+      "desc": "The budget app is mobile web app designed to help users manage their finances effectively. It provides features such as user authentication, category creation for budgeting purposes, and the ability to add transactions to track expenses and income.",
+      "stacks": ["Ruby on rails", "CSS",  "Render"]
+    }
+
+  ]
+}
