@@ -21,7 +21,7 @@ const TobbyInfo = () => {
           </Link>
         </li>
         <li>
-          <Link href="www.linkedin.com/in/samuel-popoola-tobby">
+          <Link href="https://www.linkedin.com/in/samuel-popoola-tobby/">
             <i className="fa-brands fa-linkedin" />
           </Link>
         </li>
@@ -34,7 +34,7 @@ const TobbyInfo = () => {
     </div>
     <div className="link">
       <Link ref={linkRef} href="/projects" autoFocus={true}> my project</Link>
-      <Link href="https://docs.google.com/document/d/170jxGedfI22Zv-fxWaCs4TxRADFyt0QugIDNC0z-BSM/edit?usp=sharing"> my resume</Link>
+      <Link href="/TobbyResume.pdf"> my resume</Link>
     </div>
   </main>
   )

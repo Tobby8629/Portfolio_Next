@@ -1,5 +1,5 @@
 .contact {
-  height: 100vh;
+  height: 100%;
   background-image: linear-gradient(#010101c2, #121212cf), url(/contact.jpg);
   background-position: center;
   background-size: cover;
@@ -29,6 +29,14 @@
   padding: 1rem;
 }
 
+.white {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+  margin: 1rem 0;
+}
+
 .socials {
   background-color: rgba(237, 235, 235, 0.231);
   backdrop-filter: blur(15px);
@@ -38,8 +46,6 @@
 
 .socials li {
   color: rgb(251, 121, 121);
-
-  /* color: rgb(171, 171, 171); */
   font-weight: 700;
 }
 
@@ -63,11 +69,28 @@
 
 .conditions {
   display: none;
+  color: rgb(253, 135, 135);
+  padding: 1rem;
+  font-size: 14px;
+}
+
+.conditions li {
+  list-style: circle;
 }
 
 .contact form button {
   width: fit-content;
   padding: 0.5rem 1rem;
+  background-color: rgb(251, 121, 121);
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  transition: 0.3s linear;
+}
+
+.contact form button:hover {
+  padding: 0.5rem 1.2rem;
 }
 
 @media (min-width: 768px) {

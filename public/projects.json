@@ -12,13 +12,13 @@
     },
     {
       "id": 2,
-      "project": "https://tobby-math-magician.onrender.com/arithemetic",
-      "image": "/metricApp2.png",
-      "group": "metric",
-      "title": "Math App",
-      "source": "https://github.com/Tobby8629/math_magician.git",
-      "desc": "math magician is a simple mathmatics website that says alot amd promote the mathematics community, it consist of feature such as calculator that run simple arithemetics",
-      "stacks": ["React", "CSS", "Redux", "Render"]
+      "project": "https://mob-scrub.vercel.app/",
+      "image": "/mob-scrub.png",
+      "group": "others",
+      "title": "Mob-Scrub",
+      "source": "https://github.com/Tobby8629/mob_scrub",
+      "desc": "The Mob-Scrub app simplifies scheduling laundry and house cleaning services. With user-friendly features like easy booking, secure payments, and real-time updates, it provides a seamless experience for customers.",
+      "stacks": ["React", "CSS", "Git", "Vercel"]
     },
     {
       "id": 3,
@@ -62,7 +62,7 @@
     },
     {
       "id": 7,
-      "project": "https://exchange-budget.onrender.com",
+      "project": "https://exchange-budget.onrender.com/",
       "image": "/budgetApp.png",
       "group": "others",
       "title": "Exchange BudgetApp",

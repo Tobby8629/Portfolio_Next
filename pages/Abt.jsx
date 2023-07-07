@@ -1,7 +1,9 @@
-import Link from 'next/link';
 import styles from '@/styles/Abt.module.css';
 import MoreAbout from '@/components/tee';
 import Tools from '@/components/Tools';
+import AOS  from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 const Abt = () => {
   const skill = [
@@ -138,10 +140,14 @@ const Abt = () => {
   const backend = tools.filter((e)=> e.class === "backend")
   const tool = tools.filter((e)=> e.class === "tool")
 
+  useEffect(()=>{
+    AOS.init({duration: 1500})
+  },[])
+
   return (
-    <main className={styles.mobil}>
+    <main className={styles.mobil} style={{overflow: "hidden"}}>
     <div className={styles.texts}>
-      <div className={styles.imag}>
+      <div className={styles.imag} data-aos = "fade-right">
         <img src='tobby.jpg' alt='tobby' className='desk'/>
       </div>
       <MoreAbout />
@@ -149,10 +155,10 @@ const Abt = () => {
      <>
        <h2 className='head'>Skills and Tools</h2>
        <div className={styles.st}>
-        <Tools title="Front-end" tools = {frontend}  />
-        <Tools title="Backend-end" tools = {backend}  />
-        <Tools title="Other tools" tools = {tool}  />
-        <div className={styles.ski}>
+        <Tools title="Front-end" tools = {frontend} anime="zoom-in" />
+        <Tools title="Backend-end" tools = {backend} anime="fade-left" />
+        <Tools title="Other tools" tools = {tool} anime="fade-right" />
+        <div className={styles.ski} data-aos="flip-right">
           <>
             <h4>soft skills: </h4>
             <div className={styles.experience}>

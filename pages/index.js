@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title> Tobby || Home</title>
       </Head>
-      <header className="header">
+      <header className="header" style={{overflow: "hidden"}}>
         <div className='wrapper'>
           <h2>
           {' '}

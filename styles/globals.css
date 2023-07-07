@@ -6,6 +6,10 @@
   font-family: 'Nunito Sans', sans-serif;
 }
 
+.body {
+  overflow: hidden;
+}
+
 img {
   width: 50%;
 }
@@ -102,17 +106,28 @@ nav ul li :hover {
   background-image: linear-gradient(#010101c2, #121212cf), url(/home.jpg);
 }
 
+.header h2 {
+  font-size: 35px;
+  color: rgb(192, 190, 190);
+  animation: slide 1.5s 1;
+}
+
+@keyframes slide {
+  from {
+    transform: scale(0.3);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
 .header h3 {
   font-size: 18px;
 }
 
-.header h2 {
-  font-size: 35px;
-  color: rgb(192, 190, 190);
-}
-
 .duty {
-  animation: duty 3s infinite;
+  animation: duty 5s infinite;
 }
 
 .about {
@@ -182,12 +197,34 @@ nav ul li :hover {
 
 .text p {
   margin: 10px 0;
+  animation: slide1 1.5s 1;
+}
+
+@keyframes slide1 {
+  from {
+    transform: translateX(100px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 
 .text ul {
   margin: 10px 0;
   display: flex;
   align-items: center;
+  animation: slide2 1.5s 1;
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateX(-100px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 
 .text li {
@@ -245,7 +282,7 @@ nav ul li :hover {
 
 @keyframes left {
   from {
-    transform: translateX(-15px);
+    transform: translateX(-50px);
   }
 
   to {
@@ -260,7 +297,7 @@ nav ul li :hover {
 
 @keyframes right {
   from {
-    transform: translateX(15px);
+    transform: translateX(50px);
   }
 
   to {
@@ -484,7 +521,7 @@ nav ul li :hover {
   }
 
   .text p {
-    font-size: 38px;
+    font-size: 32px;
   }
 
   .text i {
@@ -492,7 +529,7 @@ nav ul li :hover {
   }
 
   .link a {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .header h2 {
