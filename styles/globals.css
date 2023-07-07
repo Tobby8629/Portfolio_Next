@@ -103,7 +103,7 @@ nav ul li :hover {
   display: flex;
   flex-direction: column;
   font-family: 'Nunito Sans', sans-serif;
-  background-image: linear-gradient(#010101c2, #121212cf), url(/home.jpg);
+  background-image: linear-gradient(#000000e3, #000000eb), url(/home.jpg);
 }
 
 .header h2 {
@@ -491,7 +491,7 @@ nav ul li :hover {
   }
 
   .about {
-    background-image: linear-gradient(#00000097, #000000ab), url(/about.jpg);
+    background-image: linear-gradient(#000000e3, #000000eb), url(/about.jpg);
     height: 100%;
     padding-top: 5rem;
   }
